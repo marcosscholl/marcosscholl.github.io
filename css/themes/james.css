@@ -166,6 +166,16 @@ background:url(../img/progress-education4.png) no-repeat center center;
 .btn-github:hover {
   background: #000012 !important;
 }
+.btn-gmail {
+  background:url(../../img/gmail.png) no-repeat center center;
+  /*background: #031634;*/
+  border: #031634;
+  height: 50px;
+  width: 50px;
+}
+.btn-gmail:hover {
+  background: #000012 !important;
+}
 /* ==========================================================
 ! 3. Tipography
 ========================================================== */
