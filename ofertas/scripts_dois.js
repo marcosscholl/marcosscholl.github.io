@@ -18,6 +18,6 @@ var MY_ADDRESS_dois = '0x1DdaBb3f9D1403BFAFb955874c7b3B998459b9F4'
         })
       })
       function renderMessage (message) {
-        var messageEl = document.querySelector('.message_dois')
-        messageEl.innerHTML = message
+        var dois_messageEl = document.querySelector('.message_dois')
+        dois_messageEl.innerHTML = message
       }
