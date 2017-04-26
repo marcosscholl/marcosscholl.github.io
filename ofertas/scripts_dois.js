@@ -2,7 +2,7 @@ var MY_ADDRESS_dois = '0x1DdaBb3f9D1403BFAFb955874c7b3B998459b9F4'
       var tipButton_dois = document.querySelector('.tip-button_dois')
       tipButton_dois.addEventListener('click', function() {
         if (typeof web3 === 'undefined') {
-          return renderMessage('<div>Você precisa instalar o <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" target="_blank" id="tlink">MetaMask</a> para usar esse recurso.  <a href="https://metamask.io" target="_blank" id="tlink_dois">https://metamask.io</a></div>')
+          return renderMessage('<div>Você precisa instalar o <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" target="_blank" id="tlink_dois">MetaMask</a> para usar esse recurso.  <a href="https://metamask.io" target="_blank" id="tlink_dois">https://metamask.io</a></div>')
         }
         var user_address_dois = web3.eth.accounts[0]
         web3.eth.sendTransaction({
@@ -17,7 +17,7 @@ var MY_ADDRESS_dois = '0x1DdaBb3f9D1403BFAFb955874c7b3B998459b9F4'
           renderMessage('Transação Aceita')
         })
       })
-      function renderMessage (message) {
+      function renderMessage (message_dois) {
         var dois_messageEl = document.querySelector('.message_dois')
-        dois_messageEl.innerHTML = message
+        dois_messageEl.innerHTML = message_dois
       }
