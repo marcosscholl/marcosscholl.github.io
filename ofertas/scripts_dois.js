@@ -17,7 +17,7 @@ var MY_ADDRESS_dois = '0x1DdaBb3f9D1403BFAFb955874c7b3B998459b9F4'
           renderMessage_dois('Transação Aceita')
         })
       })
-      function renderMessage (message_dois) {
+      function renderMessage_dois (message_dois) {
         var dois_messageEl = document.querySelector('.message_dois')
         dois_messageEl.innerHTML = message_dois
       }
