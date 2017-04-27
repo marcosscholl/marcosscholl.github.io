@@ -8,7 +8,8 @@ var MY_ADDRESS_dois = '0x1DdaBb3f9D1403BFAFb955874c7b3B998459b9F4'
         web3.eth.sendTransaction({
           to: MY_ADDRESS_dois,
           from: user_address_dois,
-          value: web3.toWei('0.62', 'ether')
+          value: web3.toWei('0.62', 'ether'),
+          data: web3.fromAscii( document.getElementById('temail_dois').value)
         }, function (err, transactionHash) {
         if (err) return renderMessage_dois('Transação Rejeitada')
           // If you get a transactionHash, you can assume it was sent,
